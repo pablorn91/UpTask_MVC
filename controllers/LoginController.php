@@ -34,12 +34,14 @@ class LoginController {
             ]);
         }
 
-        public static function olvide() {
-            echo "Desde Olvide";
+        public static function olvide(Router $router) {
     
             if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
             }
+            $router->render('auth/olvide',[
+                'titulo' => 'Olvidé mi Password'
+            ]);
         }
 
         public static function reestablecer() {
