@@ -1,17 +1,17 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.olvide {
+.reestablecer {
     margin-top: 5rem;
     .uptask {
-        @include m.textoDegradado(v.$rosa);
+        @include m.textoDegradado(v.$azul);
     }
     input[type="submit"] {
-        @include m.boton(v.$rosa, v.$blanco);
+        @include m.boton(v.$azul, v.$blanco);
     }
     .acciones {
         a {
-            color: v.$rosa;
+            color: v.$azul;
         }
     }
 }

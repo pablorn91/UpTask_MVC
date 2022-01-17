@@ -4,7 +4,7 @@
 .login {
     margin-top: 5rem;
     .uptask {
-        @include m.textoDegradado(v.$cyan, v.$morado);
+        @include m.textoDegradado(v.$cyan);
     }
     input[type="submit"] {
         @include m.boton(v.$cyan, v.$blanco);
