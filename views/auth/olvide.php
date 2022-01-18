@@ -2,11 +2,13 @@
 
 <?php include_once __DIR__.'/../templates/nombre-sitio.php' ?>
 
-    <div class="contenedor-sm">
+<div class="contenedor-sm">
+    
+    <p class="descripcion-pagina">Escribe tu Email y Reestablece tu password</p>
+    
+    <?php include_once __DIR__.'/../templates/alertas.php' ?>
 
-        <p class="descripcion-pagina">Escribe tu Email y Reestablece tu password</p>
-
-        <form action="/olvide" class="formulario" method="POST">
+        <form action="/olvide" class="formulario" method="POST" novalidate>
 
             <div class="campo">
                 <label for="email">Email</label>

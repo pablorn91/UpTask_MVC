@@ -2,11 +2,15 @@
 
 <?php include_once __DIR__.'/../templates/nombre-sitio.php' ?>
 
-    <div class="contenedor-sm">
+<div class="contenedor-sm">
+    
+    <p class="descripcion-pagina">Coloca tu nuevo password</p>
+    
+    <?php include_once __DIR__.'/../templates/alertas.php' ?>
 
-        <p class="descripcion-pagina">Coloca tu nuevo password</p>
+<?php if ($mostrar): ?>
 
-        <form action="/reestablecer" class="formulario" method="POST">
+        <form class="formulario" method="POST">
 
             <div class="campo">
                 <label for="password">Password</label>
@@ -20,11 +24,14 @@
 
             <input type="submit" class="boton" value="Guardar Password">
 
-            <div class="acciones">
-                <a href="/crear">¿Aún no tienes cuenta? Crear una</a>
-                <a href="/olvide">¿Olvidaste tu Password?</a>
-            </div>
-
         </form>
+
+<?php endif; ?>
+
+        <div class="acciones">
+            <a href="/crear">¿Aún no tienes cuenta? Crear una</a>
+            <a href="/olvide">¿Olvidaste tu Password?</a>
+        </div>
+
     </div> <!--.contenedor-sm-->
 </div>
