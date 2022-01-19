@@ -53,11 +53,12 @@ class LoginController {
     }
     
     public static function logout() {
-        echo "Desde Logout";
         
-        if($_SERVER['REQUEST_METHOD'] === 'POST') {
-            
+        if(!isset($_SESSION)) {
+            session_start();
         }
+        $_SESSION = [];
+        header('Location: /');
     }
 
         public static function crear(Router $router) {
