@@ -8,6 +8,9 @@
         id="agregar-tarea" 
         >&plus; Nueva Tarea</button> <!-- Puedes buscar en google entidades ( plus sign html entity ) -->
     </div>
+    <ul id="listado-tareas" class="listado-tareas" >
+
+    </ul>
 </div>
 
 <?php include_once __DIR__.'/footer-dashboard.php'; ?>
